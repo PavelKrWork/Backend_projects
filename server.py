@@ -7,7 +7,7 @@ def client_process(user, address):
 
 server = socket(AF_INET, SOCK_STREAM)
 server.setsockopt(SOL_SOCKET, SO_REUSEADDR, 1)
-server.bind(('192.168.1.18', 8080))
+server.bind(('0.0.0.0', 8080))
 server.listen(5)
 
 while True:
